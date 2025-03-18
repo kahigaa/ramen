@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1 style="text-align: center;font-family: sans regular;color: white;background-color: black;">Ramen Rater</h1>
+    </div>
+    
+    <div id="ramen-menu" style="display: flex;justify-content: center; margin-top: 3%;"> </div>
+    
+    <div id="ramen-detail" class="ramendetail" >
+        <div class="ramen-info">
+        <p id="ramen-name" style="font-family: sans regular;font-weight: 500;"></p>
+        <p id="ramen-restaurant" style="font-family: sans regular;font-weight: 500;"></p>
+        </div>
+        <img id="ramen-image" style="width:30%;height:30%;" >
+        <p id="ramen-rating" style="font-family: sans regular;font-weight: 500;"></p>
+        <p id="ramen-comment" style="font-family: sans regular;font-weight: 500;"></p>
+    </div>
+    
+    <p style="text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-family: sans regular;">Add New Ramen </p>
+    <form id="new-ramen-form" class="new-ramen-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="restaurant">Restaurant:</label>
+        <input type="text" id="restaurant" name="restaurant" required>
+        
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image" required>
+        
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" required>
+        
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        
+        <button type="submit">create</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
